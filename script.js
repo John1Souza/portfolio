@@ -22,7 +22,7 @@ const sect = document.getElementById("skills_showcase_wrapper");
                 				var repoElement = document.createElement('div');
                 				repoElement.classList.add('repo');
                 				repoElement.innerHTML = `
-							<div class="zoom"><img class="projects-photo" src="./images/${repo.name}.png" alt="projects photo"/></div>
+							<div class="zoom"><img class="projects-photo" src="./images/${repo.name}.webp" alt="projects photo"/></div>
                     					<h3>${repo.name}</h3>
                     					<p><strong>Descrição:</strong> ${repo.description}</p>
                     					<p><strong>Linguagem:</strong> ${repo.language}</p>
