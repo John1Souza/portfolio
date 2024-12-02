@@ -233,7 +233,7 @@
 		#social_list > li > a {display: flex;gap: 5px}
 		#sugest_form {
 			width: 450px;
-			height: 250px;
+			height: 450px;
 			display: flex;
 			flex-direction: column;
 			justify-content: space-evenly;
