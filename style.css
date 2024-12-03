@@ -267,7 +267,7 @@
 		#carousel {
 			display: flex;
 			align-items: center;
-			justify-content: center;
+			justify-content: space-between;
 			overflow: hidden;
 			width: 80%; /* Ajuste conforme necessário */
 			margin: 0 auto;
@@ -309,8 +309,8 @@
 			flex-direction: column;
 			justify-content: space-evenly;
 			align-items: center;
-			width: 200px;
-			height: 300px;
+			width: 400px;
+			height: 600px;
 			background-color: var(--main-bg-color);
 			border-radius: 10px;
 			padding: 5px;
