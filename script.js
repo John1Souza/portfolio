@@ -36,3 +36,16 @@ const sect = document.getElementById("skills_showcase_wrapper");
             			console.error('Erro ao carregar repositórios do GitHub:', error);
         		});
 		});	
+
+
+const container = document.getElementById('repos-container');
+const nextButton = document.getElementById('next');
+const prevButton = document.getElementById('prev');
+
+nextButton.addEventListener('click', () => {
+	container.scrollBy({ left: 220, behavior: 'smooth' });
+});
+
+prevButton.addEventListener('click', () => {
+	container.scrollBy({ left: -220, behavior: 'smooth' });
+});
