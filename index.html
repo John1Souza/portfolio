@@ -6,26 +6,33 @@
 	<link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico"s>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
 	<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=LXGW+WenKai+Mono+TC&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tiny5&family=Danfo&family=Honk&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+	<script src="script.js">
+		
+	</script>
+	<link rel="stylesheet" href="animation-style.css">
 	<link rel="stylesheet" href="style.css">
 	<title>john.dev</title>
 	
   </head>
   <body>
-    	<header>
-	<div id="logo"><svg fill="#000000" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
-		viewBox="0 0 512 512" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" 
-stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <g> <polygon points="220.475,153.71 209.392,142.626 161.325,190.694 209.392,238.761 220.475,227.677 183.49,190.694 "></polygon> </g> 
-</g> <g> <g> <polygon points="302.607,142.626 291.525,153.71 328.509,190.694 291.525,227.677 302.607,238.761 350.673,190.694 "></polygon> </g> </g> <g> <g> <rect x="209.095" y="182.85" 
-transform="matrix(0.4227 -0.9063 0.9063 0.4227 -25.0128 342.1079)" width="93.845" height="15.674"></rect> </g> </g> <g> <g> <path d="M360.913,43.24C332.553,15.079,294.94-0.247,254.932,0.003c-81.636,0.574-147.952,67.469-147.83,149.122 
-c0.037,24.619,6.212,49.006,17.856,70.527c21.617,39.954,35.938,82.013,42.565,125.01l8.612,55.871h19.783v83.592h20.898V512 h78.36		
-7v-27.877h20.898v-83.592h19.783l8.782-56.976c6.495-42.142,20.78-83.869,42.459-124.02 c11.64-21.56,17.793-45.986,17.793-70.637C404.897,108.928,389.277,71.405,360.913,43.24z M279.51,496.326h-47.02v-12.203h47.02 
-V496.326z M300.408,468.45h-88.816v0v-12.19h88.816V468.45z M300.408,440.586h-88.816v-12.191h88.816V440.586z M373.313,212.088 
-c-22.532,41.733-37.39,85.162-44.158,129.079l-6.734,43.691h-87.319v15.673h65.306v12.191h-88.816v-27.864h-22.013l-6.564-42.585 
-c-6.902-44.776-21.797-88.54-44.271-130.08c-10.413-19.245-15.935-41.061-15.968-63.091 c-0.109-73.058,59.226-132.912,132.266-133.425c0.323-0.002,0.641-0.004,0.963-0.004c35.415,0,68.72,13.719,93.865,38.688 
-c25.378,25.201,39.354,58.773,39.354,94.536C389.224,170.958,383.721,192.809,373.313,212.088z"></path> </g> </g> </g></svg></div>
-      	<h1><a hre="#home">john.dev</a></h1>
-		<nav id="navigation_menu">
+	<header>
+		<div id="logo"><svg fill="#000000" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+			viewBox="0 0 512 512" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" 
+	stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <g> <polygon points="220.475,153.71 209.392,142.626 161.325,190.694 209.392,238.761 220.475,227.677 183.49,190.694 "></polygon> </g> 
+	</g> <g> <g> <polygon points="302.607,142.626 291.525,153.71 328.509,190.694 291.525,227.677 302.607,238.761 350.673,190.694 "></polygon> </g> </g> <g> <g> <rect x="209.095" y="182.85" 
+	transform="matrix(0.4227 -0.9063 0.9063 0.4227 -25.0128 342.1079)" width="93.845" height="15.674"></rect> </g> </g> <g> <g> <path d="M360.913,43.24C332.553,15.079,294.94-0.247,254.932,0.003c-81.636,0.574-147.952,67.469-147.83,149.122 
+	c0.037,24.619,6.212,49.006,17.856,70.527c21.617,39.954,35.938,82.013,42.565,125.01l8.612,55.871h19.783v83.592h20.898V512 h78.36		
+	7v-27.877h20.898v-83.592h19.783l8.782-56.976c6.495-42.142,20.78-83.869,42.459-124.02 c11.64-21.56,17.793-45.986,17.793-70.637C404.897,108.928,389.277,71.405,360.913,43.24z M279.51,496.326h-47.02v-12.203h47.02 
+	V496.326z M300.408,468.45h-88.816v0v-12.19h88.816V468.45z M300.408,440.586h-88.816v-12.191h88.816V440.586z M373.313,212.088 
+	c-22.532,41.733-37.39,85.162-44.158,129.079l-6.734,43.691h-87.319v15.673h65.306v12.191h-88.816v-27.864h-22.013l-6.564-42.585 
+	c-6.902-44.776-21.797-88.54-44.271-130.08c-10.413-19.245-15.935-41.061-15.968-63.091 c-0.109-73.058,59.226-132.912,132.266-133.425c0.323-0.002,0.641-0.004,0.963-0.004c35.415,0,68.72,13.719,93.865,38.688 
+	c25.378,25.201,39.354,58.773,39.354,94.536C389.224,170.958,383.721,192.809,373.313,212.088z"></path> </g> </g> </g></svg></div>
+      	<h1><a href="#home">john.dev</a></h1>
+		<nav  id="navigation_menu">
 			<ul>
 				<li>
 					<a href="#home">Inicio</a>
@@ -45,84 +52,142 @@ c25.378,25.201,39.354,58.773,39.354,94.536C389.224,170.958,383.721,192.809,373.3
     	</header>
    	 <main>
 		<section id="home">
-			<p>Sou estudante de Análise e Desenvolvimento de Sistemas, atualmente em andamento. Possuo				
-				conhecimentos em desenvolvimento web, utilizando tecnologias como <span class="keywords">HTML</span>,
-				 <span class="keywords">CSS</span> e <span class="keywords">JavaScript</span>, além de frameworks modernos como 
-				<span class="keywords">React</span>. No backend, tenho experiência com <span class="keywords">Java</span> e o framework <span class="keywords">Spring</span>, além de 
-				trabalhar com bancos de dados relacionais e não relacionais, como <span class="keywords">SQL</span>, <span class="keywords">PostgreSQL</span> e <span class="keywords">MongoDB</span>. Estou sempre 
-			em busca de novos desafios e oportunidades para aprimorar minhas habilidades e contribuir para projetos inovadores.
-			</p>
-			<div><img id="profile_photo" src="./images/prophile_photo_01.webp" alt="profile photo"/></div>
+			<div id="home_desc">
+				<h1>Johnatas Souza</h1>
+				<p>Estudante e desenvolvedor Full-Stack</p>
+				<div id="licalization">
+					<svg fill="#fff" height="15px" width="15px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+	 					viewBox="0 0 264.018 264.018" xml:space="preserve">
+						<g>
+							<path d="M132.009,0c-42.66,0-77.366,34.706-77.366,77.366c0,11.634,2.52,22.815,7.488,33.24c0.1,0.223,0.205,0.442,0.317,0.661
+								l58.454,113.179c2.146,4.154,6.431,6.764,11.106,6.764c4.676,0,8.961-2.609,11.106-6.764l58.438-113.148
+								c0.101-0.195,0.195-0.392,0.285-0.591c5.001-10.455,7.536-21.67,7.536-33.341C209.375,34.706,174.669,0,132.009,0z
+								M132.009,117.861c-22.329,0-40.495-18.166-40.495-40.495c0-22.328,18.166-40.494,40.495-40.494s40.495,18.166,40.495,40.494
+								C172.504,99.695,154.338,117.861,132.009,117.861z"/>
+							<path d="M161.81,249.018h-59.602c-4.143,0-7.5,3.357-7.5,7.5c0,4.143,3.357,7.5,7.5,7.5h59.602c4.143,0,7.5-3.357,7.5-7.5
+								C169.31,252.375,165.952,249.018,161.81,249.018z"/>
+						</g>
+					</svg>
+					<p>Brasil, Brasília</p>
+				</div>
+			</div>
+			<div id="profile_photo_div"><img id="profile_photo" src="./images/profile_photo_01.png" alt="profile photo"/></div>
 		</section>
 		<section id="about">
-			<p>Como estudante de Análise e Desenvolvimento de Sistemas, estou em constante evolução no mundo da tecnologia, 
-				sempre buscando novas formas de aprimorar minhas habilidades e contribuir para projetos inovadores. 
-				Minha experiência abrange desde o desenvolvimento web, utilizando HTML, CSS, JavaScript e frameworks como React, 
-				até o backend, onde atuo com Java e Spring, além de gerenciar bancos de dados relacionais como SQL e PostgreSQL, 
-				e não relacionais, como MongoDB. Essa base sólida me permite abordar projetos com uma visão completa, do front ao back-end, 
-				entregando soluções eficientes e de alto impacto.</p>
-
-			<p>Com um ano de experiência como estagiário de TI na Empresa Brasileira de Serviços Hospitalares (Ebserh),
-				tive a oportunidade de aplicar meus conhecimentos em um ambiente desafiador e de grande relevância. Durante esse período, 
-				desenvolvi não apenas habilidades técnicas, mas também um olhar estratégico para solucionar problemas e atender às demandas de forma ágil e assertiva.
-				Estou pronto para encarar novos desafios e somar minha experiência e paixão por tecnologia a iniciativas que façam a diferença.</p>
+			<h1>Sobre Mim</h1>
+			
+			<p>
+				Olá! Sou um desenvolvedor apaixonado com profundo interesse em 
+				tecnologia e tudo relacionado à computação. 
+				Ao longo dos 2 últimos anos, dediquei-me a adquirir 
+				conhecimento com relação às áreas de tecnologia, 
+				motivado pela minha paixão por aprender e explorar novas tecnologias.
+			</p>
+		
+			<p>
+				Sou proficiente em desenvolvimento full-stack, com foco particular em 
+				<strong class="keyword">React</strong> e <strong class="keyword">NextJS</strong> para desenvolvimento web.
+				No lado <strong class="keyword">Back-End</strong>, tenho experiência com ferramentas como 
+				<strong class="keyword">Spring Boot</strong> para criar APIs RESTful, junto com 
+				<strong class="keyword">Spring Data JPA</strong> para integração com bancos de dados como 
+				<strong class="keyword">MySQL</strong>, <strong class="keyword">PostgreSQL</strong> ou 
+				<strong class="keyword">MongoDB</strong>. <strong class="keyword">Hibernate</strong> (ORM) e 
+				<strong class="keyword">Maven</strong> para gerenciar dependências. Ferramentas como 
+				<strong class="keyword">Git</strong> para versionamento de código, enquanto <strong class="keyword">JUnit</strong> e 
+				<strong class="keyword">Mockito</strong> para os testes, <strong class="keyword">Postman</strong> para testar APIs e o básico 
+				de <strong class="keyword">Docker</strong> para conteinerização — habilidades que venho aprimorando por meio de projetos 
+				pessoais e experiência profissional.
+			</p>
+		
+			<p>
+				Atualmente estou cursando um curso de Análise e Desenvolvimento de Sistemas, 
+				estágio em andamento na EBSERH - Empresa Brasileira de Serviços Hospitalares.
+			</p>
 
 		
 		</section>
 		
-		<section id="skills">
-			<h1>Meus Conhecimentos</h1>
-			<div id="skills_showcase_wrapper"></div>
-		</section>
-		<!-- <section id="projects">
-			<h1>Meus Projetos</h1>
-			<h2>Front-End</h2>
-			<div id="repos-container"></div>
-			<h2>Back-End</h2>
-		</section> -->
-		<section id="projects">
-			<h1>Meus Projetos</h1>
-			<h2>Front-End</h2>
-			<div id="carousel">
-				<button id="prev">❮</button>
-				<div id="repos-container">
-					<div>Projeto 1</div>
-					<div>Projeto 2</div>
-					<div>Projeto 3</div>
-					<div>Projeto 4</div>
-				</div>
-				<button id="next">❯</button>
+		<!-- s -->
+		<section class="section-technologies" id="technologies">
+			<h1>Tecnologias</h1>
+			<div class="button-group" id="filtros">
+			  <button class="tech-button" onclick="filtrarCartoes('linguagens')">Linguagens</button>
+			  <button class="tech-button" onclick="filtrarCartoes('framework')">Framework</button>
+			  <button class="tech-button" onclick="filtrarCartoes('biblioteca')">Bibliotecas</button>
+			  <button class="tech-button" onclick="filtrarCartoes('bancodedados')">Banco de Dados</button>
+			  <button class="tech-button" onclick="filtrarCartoes('ferramentas')">Ferramentas</button>
+			  <button class="tech-button" onclick="filtrarCartoes('apis')">APIs & Integração</button>
 			</div>
+			<div class="card-container" id="cartoes-grid">
+								
+			</div>
+		  </section>
+		<section id="projects">
+			<h1>Meus Projetos</h2>
+				<div id="front_end_projects">
+					<h2>Front-End</h2>
+					<div>
+						<div id="repos-container"></div>
+					</div>
+				</div>
 			<h2>Back-End</h2>
-			<!-- Adicione aqui outro carrossel ou outra estrutura, caso necessário -->
+			<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+				<ol class="carousel-indicators">
+				  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+				  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+				  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+				  <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+				</ol>
+				<div class="carousel-inner">
+				  <div class="carousel-item active">
+					<img class="d-block w-100" src="" alt="Primeiro Slide">
+				  </div>
+				  <div class="carousel-item">
+					<img class="d-block w-100" src="" alt="Segundo Slide">
+				  </div>
+				  <div class="carousel-item">
+					<img class="d-block w-100" src="" alt="Terceiro Slide">
+				  </div>
+				</div>
+				<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+				  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				  <span class="sr-only">Anterior</span>
+				</a>
+				<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+				  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+				  <span class="sr-only">Próximo</span>
+				</a>
+			  </div>
 		</section>
-    	</main>
-    	<footer>
+		
+	</main>
+	<footer>
 		<div id="social_div">	
-		<h1>Contatos</h1>
-		<ul id="social_list">
-			<li><a href="https://www.linkedin.com/in/johnatas-pereira-de-souza-7153b3240/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
-  <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
-</svg>Linkedin</a></li>
-			<li><a href="https://github.com/John1Souza" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
-  <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
-</svg>GitHub</a></li>
-			<li><a href="https://www.instagram.com/johnatassouza/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
-  <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
-</svg>Instagram</a></li>
-		</ul>
+			<h1>Contatos</h1>
+			<ul id="social_list">
+				<li><a href="https://www.linkedin.com/in/johnatas-pereira-de-souza-7153b3240/" target="_blank">
+					<i class="fab fa-linkedin"></i>Linkedin</a></li>
+				<li><a href="https://github.com/John1Souza" target="_blank"><i class="fab fa-github"></i>GitHub</a></li>
+				<li><a href="https://www.instagram.com/johnatassouza/" target="_blank"><i class="fab fa-instagram"></i>Instagram</a></li>
+			</ul>
 		</div>
 		<div id="footer_div">
-			<form id="sugest_form">
-				<label for="fname">Nome:</label>
-				<input type="text" id="fnome" name="fname"/>
-				<label for="fsugestao">Sugestão/Crítica:</label>
-				<textarea id="mensagem" name="mensagem"></textarea>
-				<button type="submit">Enviar</button>
+			<form id="sugest_form" method="POST">
+				<label for="name">Nome:</label>
+				<input type="text" id="name" name="name"/>
+				<label for="message">Sugestão/Crítica:</label>
+				<textarea id="message" name="message"></textarea>
+				<input type="submit" id="enviar" value="Enviar"></input>
 			</form>
 		</div>
 	</footer>
-	<script src="script.js">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	
+	<!-- <script src="https://cdn.jsdelivr.net/npm/motion@11.11.13/dist/motion.js"></script> -->
+	
+	<script type="module" src="animation-script.js">
 		
 	</script>
   </body>
