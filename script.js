@@ -95,7 +95,7 @@ document.addEventListener("DOMContentLoaded", function () {
         repoElement.classList.add("repo");
         repoElement.innerHTML = `
 								<div class="zoom">
-									<img class="projects-photo" src="./images/${repo.name}.png" alt="projects photo"/>
+									<img class="projects-photo" src="./images/${repo.name}.webp" alt="projects photo"/>
 								</div>
 								<div class="gradient-overlay"></div>
 								<h3>${repo.name}</h3>
