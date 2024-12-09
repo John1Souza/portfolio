@@ -64,7 +64,7 @@ window.onload = () => renderizarCartoes("linguagens");
 
 
 
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", async function () {
   var apiUrl = "https://api.github.com/users/John1Souza/repos?page=1&per_page=70"; // Substitua 'seu_usuario' pelo seu nome de usuário do GitHub
   let projects_collection = [
     "projeto_login_riot",
@@ -75,7 +75,7 @@ document.addEventListener("DOMContentLoaded", function () {
     "Super-Formul-rio",
   ];
  
-  fetch(apiUrl) //{headers: {'Authorization': 'token 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'}}
+  await fetch(apiUrl) //{headers: {'Authorization': 'token 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'}}
     .then((response) => response.json())
     .then((data) => { 
     	var pagesRepos = data.filter((repo) => { 
