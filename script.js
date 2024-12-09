@@ -35,31 +35,24 @@ function renderizarCartoes(filtro = "") {
   const cartoes = document.getElementById("cartoes-grid");
   cartoes.innerHTML = "";
 
-  const cartoesFiltrados = filtro
-    ? conjuntoDeFerramentas.filter((cartao) => cartao.tipo === filtro)
-    : conjuntoDeFerramentas;
+  const cartoesFiltrados = filtro ? conjuntoDeFerramentas.filter((cartao) => cartao.tipo === filtro): conjuntoDeFerramentas;
 
   cartoesFiltrados.forEach((cartao) => {
     const card = document.createElement("div");
     card.className = "cartao";
     card.innerHTML = `
-				<div id="cartao">
-					<a href="https://www.${
-            cartao.titulo
-          }.com/" target="_blank" rel="noopener noreferrer">
-						<div class="cartao-content">
-							<p class="cartao-title">${
-                cartao.titulo.charAt(0).toLocaleUpperCase() +
-                cartao.titulo.substring(1)
-              }</p>
-							<div class="icon-container">
-								<i class="devicon-${cartao.titulo}-plain colored"></i>
-								<span class="tooltip">${cartao.titulo}</span>
-							</div>
-						</div>
-					</a>
+		<div id="cartao">
+			<a href="https://www.${cartao.titulo}.com/" target="_blank" rel="noopener noreferrer">
+			<div class="cartao-content">
+				<p class="cartao-title">${cartao.titulo.charAt(0).toLocaleUpperCase() + cartao.titulo.substring(1)}</p>
+				<div class="icon-container">
+					<i class="devicon-${cartao.titulo}-plain colored"></i>
+					<span class="tooltip">${cartao.titulo}</span>
 				</div>
-			`;
+			</div>
+			</a>
+		</div>
+		`;
     cartoes.appendChild(card);
   });
 }
@@ -94,16 +87,16 @@ document.addEventListener("DOMContentLoaded", function () {
         var repoElement = document.createElement("div");
         repoElement.classList.add("repo");
         repoElement.innerHTML = `
-								<div class="zoom">
-									<img class="projects-photo" src="./images/${repo.name}.webp" alt="projects photo"/>
-								</div>
-								<div class="gradient-overlay"></div>
-								<h3>${repo.name}</h3>
-								<p><strong>Descrição:</strong> ${repo.description}</p>
-								<p><strong>Linguagem:</strong> ${repo.language}</p>
-								<p ><strong>Projeto:</strong> <a href="https://github.com/John1Souza/${repo.name}" target="_blank">${repo.name}</a></p>
-								<p ><strong>DEPLOY:</strong> <a href="https://John1Souza.github.io/${repo.name}/" target="_blank">${repo.name}</a></p>
-							`;
+				<div class="zoom">
+					<img class="projects-photo" src="./images/${repo.name}.webp" alt="projects photo"/>
+				</div>
+				<div class="gradient-overlay"></div>
+				<h3>${repo.name}</h3>
+				<p><strong>Descrição:</strong> ${repo.description}</p>
+				<p><strong>Linguagem:</strong> ${repo.language}</p>
+				<p ><strong>Projeto:</strong> <a href="https://github.com/John1Souza/${repo.name}" target="_blank">${repo.name}</a></p>
+				<p ><strong>DEPLOY:</strong> <a href="https://John1Souza.github.io/${repo.name}/" target="_blank">${repo.name}</a></p>
+			`;
         repoContainer.appendChild(repoElement);
       });
     })
