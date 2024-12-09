@@ -65,8 +65,7 @@ window.onload = () => renderizarCartoes("linguagens");
 
 
 document.addEventListener("DOMContentLoaded", function () {
-  var apiUrl =
-    "https://api.github.com/users/John1Souza/repos?page=1&per_page=70"; // Substitua 'seu_usuario' pelo seu nome de usuário do GitHub
+  var apiUrl = "https://api.github.com/users/John1Souza/repos?page=1&per_page=70"; // Substitua 'seu_usuario' pelo seu nome de usuário do GitHub
   let projects_collection = [
     "projeto_login_riot",
     "propertiesecommerce",
@@ -78,10 +77,10 @@ document.addEventListener("DOMContentLoaded", function () {
  
   fetch(apiUrl, {headers: {'Authorization': 'token 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'}})
     .then((response) => response.json())
-    .then((data) => {
-      var pagesRepos = data.filter((repo) => {
-        return repo.has_pages && projects_collection.includes(repo.name);
-      }); // Filtra apenas os repositórios com GitHub Pages ativado
+    .then((data) => { 
+    	var pagesRepos = data.filter((repo) => { 
+		return repo.has_pages && projects_collection.includes(repo.name);
+	}); // Filtra apenas os repositórios com GitHub Pages ativado
       pagesRepos.forEach((repo) => {
         var repoContainer = document.getElementById("repos-container");
         var repoElement = document.createElement("div");
