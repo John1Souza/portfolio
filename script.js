@@ -75,7 +75,9 @@ document.addEventListener("DOMContentLoaded", function () {
     "Super-Formul-rio",
   ];
  
-  fetch(apiUrl, {headers: {'Authorization': 'token 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'}})
+  fetch(apiUrl, {
+	  headers: {'Authorization': 'token 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'}
+  	})
     .then((response) => response.json())
     .then((data) => { 
     	var pagesRepos = data.filter((repo) => { 
