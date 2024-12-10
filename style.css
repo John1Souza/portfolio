@@ -219,7 +219,64 @@
 		#skills_showcase_wrapper > p {display: flex;justify-content:center;
 			align-items: center;width: 100px; height: 40px; background-color: var(--main-bg-color);border-radius: 10px; padding: 5px;margin: 0 auto;font-size: 1.1rem}
 		
+		#repos-container {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 10px;
+			justify-content: center;
+			align-items: center;
+		}
 		
+		.repo {
+			position: relative;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			align-items: center;
+			width: 18rem;
+			height: 28.125rem;
+			background: rgba(255, 136, 0, 0.089);
+			box-shadow: 0 6px 20px 0 rgba(245, 191, 111, 0.247);
+			backdrop-filter: blur( 2px );
+			-webkit-backdrop-filter: blur( 2px );
+			border-radius: 10px;
+			border: 1px solid rgba( 255, 255, 255, 0.18 );
+			transition: transform 0.3s ease, box-shadow 0.3s ease;
+			cursor: pointer;
+			border-radius: 10px;
+			padding: 10px;
+			overflow: hidden;
+		}
+		
+		.zoom {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			z-index: 0;
+			transition: background 0.3s ease;
+			overflow: hidden; 
+			margin-bottom: 10px;
+			border-radius: 10px;
+		}
+		
+		
+		.repo > * {
+			position: relative;
+			z-index: 1;
+		}
+	
+		
+		
+		.repo:hover {
+			transform: scale(1.01);
+			box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+			transition: all 0.3s ease;
+		}
+	
+		.repo:hover .zoom {
+			background: radial-gradient(circle, rgba(255, 255, 255, 0.15), rgba(0, 0, 0, 0.05));
+		}
 		.repo > h3 {
 			font-size: clamp(.9rem, 1.5rem, 5vw);
 		}
@@ -330,13 +387,13 @@
 			padding: 20px;
 		} 
 		#sugest_form > input {width: 100%;}
-		#fsugestao {width: 100%;text-align: start;}	
+		#name {width: 100%;text-align: start;}	
 		#message {
            		min-height: 200px; /* Ajuste a altura conforme necessário */
 				box-sizing: border-box; /* Inclui padding e border no tamanho total */
 				vertical-align: top; /* Garante que o alinhamento vertical esteja no topo */
 				width: 100%; /* Largura inicial */
-		     	max-width: 450px; /* Limite máximo de largura */
+		     	/*max-width: 450px; /* Limite máximo de largura */
 		     	resize: vertical; /* Permite redimensionar apenas na vertical */
 		      	padding: 10px;
 		     	border: 1px solid #ccc;

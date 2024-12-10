@@ -74,6 +74,9 @@ document.addEventListener("DOMContentLoaded", async function () {
     "html-css-website-v1",
     "Super-Formul-rio",
   ];
+  let projects_collection_backend = [
+    "IMERSAO_PROFISSIONAL_APLICANDO_ORIENTACAO_A_OBJETOS ",
+  ];
  
   await fetch(apiUrl) //{headers: {'Authorization': 'token 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'}}
     .then((response) => response.json())
@@ -97,6 +100,32 @@ document.addEventListener("DOMContentLoaded", async function () {
 				<p ><strong>DEPLOY:</strong> <a href="https://John1Souza.github.io/${repo.name}/" target="_blank">${repo.name}</a></p>
 			`;
         repoContainer.appendChild(repoElement);
+      });
+    })
+    .catch((error) => {
+      console.error("Erro ao carregar repositórios do GitHub: ", error);
+    });
+
+    await fetch(apiUrl) //{headers: {'Authorization': 'token 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'}}
+    .then((response) => response.json())
+    .then((data) => { 
+    	var backendRepos = data.filter((repo) => { 
+		return projects_collection_backend.includes(repo.name);
+	}); // Filtra apenas os repositórios com GitHub Pages ativado
+        backendRepos.forEach((repo) => {
+        var repoContainerBackend = document.getElementById("repos-container-backend");
+        var repoElement = document.createElement("div");
+        repoElement.classList.add("repo-backend");
+        repoElement.innerHTML = `
+				<div class="zoom-backend">
+					<img class="projects-photo-backend" src="./images/${repo.name}.webp" alt="projects photo"/>
+				</div>
+				<h3>${repo.name}</h3>
+				<p><strong>Descrição:</strong> ${repo.description}</p>
+				<p><strong>Linguagem:</strong> ${repo.language}</p>
+				<p ><strong>Projeto:</strong> <a href="https://github.com/John1Souza/${repo.name}" target="_blank">${repo.name}</a></p>
+			`;
+       repoContainerBackend.appendChild(repoElement);
       });
     })
     .catch((error) => {
