@@ -41,7 +41,7 @@ function renderizarCartoes(filtro = "") {
     const card = document.createElement("div");
     card.className = "cartao";
     card.innerHTML = `
-		<div id="cartao">
+		<div id="cartao" >
 			<a href="https://www.${cartao.titulo}.com/" target="_blank" rel="noopener noreferrer">
 			<div class="cartao-content">
 				<p class="cartao-title">${cartao.titulo.charAt(0).toLocaleUpperCase() + cartao.titulo.substring(1)}</p>
@@ -65,15 +65,17 @@ window.onload = () => renderizarCartoes("linguagens");
 
 
 document.addEventListener("DOMContentLoaded", async function () {
-  var apiUrl = "https://api.github.com/users/John1Souza/repos?page=1&per_page=70"; // Substitua 'seu_usuario' pelo seu nome de usuário do GitHub
+  var apiUrl = "https://api.github.com/users/John1Souza/repos?page=1&per_page=80"; // Substitua 'seu_usuario' pelo seu nome de usuário do GitHub
+  
   let projects_collection = [
     "projeto_login_riot",
     "propertiesecommerce",
     "projeto-web-site",
     "landing-page",
-    "html-css-website-v1",
-    "Super-Formul-rio",
+    "website-v1",
+    "super-formulario",
   ];
+
   let projects_collection_backend = [
     "IMERSAO_PROFISSIONAL_APLICANDO_ORIENTACAO_A_OBJETOS ",
   ];
@@ -89,10 +91,9 @@ document.addEventListener("DOMContentLoaded", async function () {
         var repoElement = document.createElement("div");
         repoElement.classList.add("repo");
         repoElement.innerHTML = `
-				<div class="zoom">
+				<div class="zoom" >
 					<img class="projects-photo" src="./images/${repo.name}.webp" alt="projects photo"/>
 				</div>
-				<div class="gradient-overlay"></div>
 				<h3>${repo.name}</h3>
 				<p><strong>Descrição:</strong> ${repo.description}</p>
 				<p><strong>Linguagem:</strong> ${repo.language}</p>

@@ -10,13 +10,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=LXGW+WenKai+Mono+TC&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tiny5&family=Danfo&family=Honk&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">	
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-	<script src="script.js">
-		
-	</script>
-	<script src="animation-script.js">
-		
-	</script>
-	<link rel="stylesheet" href="animation-style.css">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<link rel="stylesheet" href="style.css">
 	<title>john.dev</title>
 	
@@ -54,11 +48,11 @@
 		</nav>
     	</header>
    	 <main>
-		<section id="home">
-			<div id="home_desc">
+		<section id="home" data-aos="fade-up" data-aos-duration="1000">
+			<div id="home_desc" data-aos="fade-right" data-aos-duration="1000" data-aos-anchor="#home" data-aos-offset="500">
 				<h1>Johnatas Souza</h1>
 				<p>Estudante e desenvolvedor Full-Stack</p>
-				<div id="licalization">
+				<div id="licalization" data-aos="fade-up" data-aos-duration="500" data-aos-anchor="#home_desc">
 					<svg fill="#fff" height="15px" width="15px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
 	 					viewBox="0 0 264.018 264.018" xml:space="preserve">
 						<g>
@@ -74,12 +68,12 @@
 					<p>Brasil, Brasília</p>
 				</div>
 			</div>
-			<div id="profile_photo_div"><img id="profile_photo" src="./images/profile_photo_01.webp" alt="profile photo"/></div>
+			<div id="profile_photo_div" data-aos="fade-left" data-aos-duration="1000" data-aos-anchor="#home" data-aos-offset="500"><img id="profile_photo" src="./images/profile_photo_01.webp" alt="profile photo"/></div>
 		</section>
-		<section id="about">
+		<section id="about" >
 			<h1>Sobre Mim</h1>
 			
-			<p>
+			<p data-aos="fade-left" data-aos-duration="1000" data-aos-anchor="#about" data-aos-offset="500">
 				Olá! Sou um desenvolvedor apaixonado com profundo interesse em 
 				tecnologia e tudo relacionado à computação. 
 				Ao longo dos 2 últimos anos, dediquei-me a adquirir 
@@ -87,7 +81,7 @@
 				motivado pela minha paixão por aprender e explorar novas tecnologias.
 			</p>
 		
-			<p>
+			<p data-aos="fade-right" data-aos-duration="1100" data-aos-anchor="#about" data-aos-offset="500">
 				Sou proficiente em desenvolvimento full-stack, com foco particular em 
 				<strong class="keyword">React</strong> e <strong class="keyword">NextJS</strong> para desenvolvimento web.
 				No lado <strong class="keyword">Back-End</strong>, tenho experiência com ferramentas como 
@@ -102,7 +96,7 @@
 				pessoais e experiência profissional.
 			</p>
 		
-			<p>
+			<p data-aos="fade-left" data-aos-duration="1200" data-aos-anchor="#about" data-aos-offset="500">
 				Atualmente estou cursando um curso de Análise e Desenvolvimento de Sistemas, 
 				estágio em andamento na EBSERH - Empresa Brasileira de Serviços Hospitalares.
 			</p>
@@ -114,12 +108,12 @@
 		<section class="section-technologies" id="technologies">
 			<h1>Tecnologias</h1>
 			<div class="button-group" id="filtros">
-			  <button class="tech-button" onclick="filtrarCartoes('linguagens')">Linguagens</button>
-			  <button class="tech-button" onclick="filtrarCartoes('framework')">Framework</button>
-			  <button class="tech-button" onclick="filtrarCartoes('biblioteca')">Bibliotecas</button>
-			  <button class="tech-button" onclick="filtrarCartoes('bancodedados')">Banco de Dados</button>
-			  <button class="tech-button" onclick="filtrarCartoes('ferramentas')">Ferramentas</button>
-			  <button class="tech-button" onclick="filtrarCartoes('apis')">APIs & Integração</button>
+			  <button class="tech-button" onclick="filtrarCartoes('linguagens')" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-duration="200" data-aos-offset="300" data-aos-anchor-placement="center-bottom">Linguagens</button>
+			  <button class="tech-button" onclick="filtrarCartoes('framework')" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-duration="250" data-aos-offset="300" data-aos-anchor-placement="center-bottom">Framework</button>
+			  <button class="tech-button" onclick="filtrarCartoes('biblioteca')" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-duration="300" data-aos-offset="300" data-aos-anchor-placement="center-bottom">Bibliotecas</button>
+			  <button class="tech-button" onclick="filtrarCartoes('bancodedados')" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-duration="350" data-aos-offset="300" data-aos-anchor-placement="center-bottom">Banco de Dados</button>
+			  <button class="tech-button" onclick="filtrarCartoes('ferramentas')" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-duration="400" data-aos-offset="300" data-aos-anchor-placement="center-bottom">Ferramentas</button>
+			  <button class="tech-button" onclick="filtrarCartoes('apis')" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-duration="450" data-aos-offset="300" data-aos-anchor-placement="center-bottom">APIs & Integração</button>
 			</div>
 			<div class="card-container" id="cartoes-grid">
 								
@@ -127,10 +121,10 @@
 		  </section>
 		<section id="projects">
 			<h1>Meus Projetos</h2>
-				<div id="front_end_projects">
+				<div id="front_end_projects" >
 					<h2>Front-End</h2>
 					<div>
-						<div id="repos-container"></div>
+						<div id="repos-container" data-aos="fade-zoom-in" data-aos-easing="ease-in" data-aos-duration="300" data-aos-offset="500"></div>
 					</div>
 				</div>
 				<div  id="back_end_projects">
@@ -143,17 +137,17 @@
 		
 	</main>
 	<footer>
-		<div id="social_div">	
+		<div id="social_div" >	
 			<h1>Contatos</h1>
 			<ul id="social_list">
-				<li><a href="https://www.linkedin.com/in/johnatas-pereira-de-souza-7153b3240/" target="_blank">
+				<li data-aos="fade-right" data-aos-easing="ease-in" data-aos-duration="200" data-aos-offset="300" data-aos-anchor="#social_list"><a href="https://www.linkedin.com/in/johnatas-pereira-de-souza-7153b3240/" target="_blank">
 					<i class="fab fa-linkedin"></i>Linkedin</a></li>
-				<li><a href="https://github.com/John1Souza" target="_blank"><i class="fab fa-github"></i>GitHub</a></li>
-				<li><a href="https://www.instagram.com/johnatassouza/" target="_blank"><i class="fab fa-instagram"></i>Instagram</a></li>
+				<li data-aos="fade-up" data-aos-easing="ease-in" data-aos-duration="250" data-aos-offset="300" data-aos-anchor="#social_list"><a href="https://github.com/John1Souza" target="_blank"><i class="fab fa-github"></i>GitHub</a></li>
+				<li data-aos="fade-left" data-aos-easing="ease-in" data-aos-duration="300" data-aos-offset="300" data-aos-anchor="#social_list"><a href="https://www.instagram.com/johnatassouza/" target="_blank"><i class="fab fa-instagram"></i>Instagram</a></li>
 			</ul>
 		</div>
 		<div id="footer_div">
-			<form id="sugest_form" method="POST">
+			<form id="sugest_form" method="POST" data-aos="fade-left" data-aos-easing="ease-in" data-aos-duration="300" data-aos-offset="300">
 				<label for="name">Nome:</label>
 				<input type="text" id="name" name="name"/>
 				<label for="message">Sugestão/Crítica:</label>
@@ -166,10 +160,13 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 	
-	<!-- <script src="https://cdn.jsdelivr.net/npm/motion@11.11.13/dist/motion.js"></script> -->
-	
-	<!--<script type="module" src="animation-script.js"> 
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+  		AOS.init();
+	</script>
+
+	<script src="script.js">
 		
-	</script>-->
+	</script>
   </body>
 </html>
