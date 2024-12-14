@@ -1,0 +1,78 @@
+@media only screen and (max-width: 1024px){
+	body {
+		
+	}
+	
+	.header {
+		padding: 1rem .5rem;
+		justify-content: center;
+		align-items: center;
+	}
+
+	main, section,  footer {
+		background-color: var(--secondary-bg-color);
+		padding: 10px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	header > h1, #navigation_menu {
+		display: none;
+	}
+	#home {
+		height: auto;
+		flex-direction: column-reverse;
+		margin-top: 3rem;
+	}
+
+	#home, #about{	
+		display: flex;
+		box-shadow: 2px 2px 5px 0px rgba(255, 127, 80, 0.5);
+		-webkit-box-shadow: 2px 2px 5px 0px rgba(255, 127, 80, 0.5);
+		-moz-box-shadow: 2px 2px 5px 0px rgba(255, 127, 80, 0.5);
+	}
+
+	#home_desc{
+		width: 100%;
+	}
+
+	#profile_photo_div {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+
+	#profile_photo {
+		width: 80%;
+		border-radius: 50%;
+	}
+	
+
+	footer {
+		padding: 2rem 0 0 0;
+		gap: 1rem;
+	}
+
+	footer > div {
+		flex-wrap: wrap;
+		padding: 2rem 0 3rem 0;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.repo {
+		width: 100%;
+		backdrop-filter: none;
+		-webkit-backdrop-filter: none;
+	}
+	
+
+	.repo > p {
+		font-size: 1.25rem;
+	}
+
+	.projects-photo {
+		height: 250px;
+	}
+}	
