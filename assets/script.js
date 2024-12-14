@@ -65,7 +65,7 @@ window.onload = () => renderizarCartoes("linguagens");
 
 
 document.addEventListener("DOMContentLoaded", async function () {
-  var apiUrl = "https://api.github.com/users/John1Souza/repos?page=1&per_page=80"; // Substitua 'seu_usuario' pelo seu nome de usuário do GitHub
+  var apiUrl = "https://api.github.com/users/John1Souza/repos?page=1&per_page=80";
   
   let projects_collection = [
     "projeto_login_riot",
@@ -80,7 +80,7 @@ document.addEventListener("DOMContentLoaded", async function () {
     "IMERSAO_PROFISSIONAL_APLICANDO_ORIENTACAO_A_OBJETOS ",
   ];
  
-  await fetch(apiUrl, {headers: {'Authorization': 'token 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'}})
+  await fetch(apiUrl)
     .then((response) => response.json())
     .then((data) => { 
     	var pagesRepos = data.filter((repo) => { 
@@ -107,7 +107,7 @@ document.addEventListener("DOMContentLoaded", async function () {
       console.error("Erro ao carregar repositórios do GitHub: ", error);
     });
 
-    await fetch(apiUrl, {headers: {'Authorization': 'token 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'}})
+    await fetch(apiUrl)
     .then((response) => response.json())
     .then((data) => { 
     	var backendRepos = data.filter((repo) => { 
